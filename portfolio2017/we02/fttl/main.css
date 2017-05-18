@@ -1,0 +1,456 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+body{
+
+}
+@media print {
+    img {
+        display: none;
+    }
+
+    h1, h2, h3, h4, h5, h6, p{
+        text-align: center;
+        padding: 0px;
+        margin:0px;
+    }
+    body {
+        width: 100%;
+        margin: 5px 0px;
+        padding: 10px 0px;
+    }
+    a{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    .activity-button {
+        display: block
+    }
+}
+.container{
+    width:100%;
+    max-height: 3500px;
+
+}
+.scenic-flight-button{background-image: url('scenic-flight-button.png');}.mountain-viewing-button{background-image: url('mountain-viewing-button.png')}.lake-trip-button{background-image: url('lake-trip-button.png')}.photo-flight-button{background-image: url('photo-flight-button.png')}.charter-button{background-image: url('charter-button.png')}.remote-high-country-tramp-button{background-image: url('remote-high-country-tramp-button.png')}
+.scenic-flight-button, .mountain-viewing-button, .lake-trip-button, .photo-flight-button, .charter-button, .remote-high-country-tramp-button{
+    width: 470px;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+.scenic-flight-button h2, .mountain-viewing-button h2, .lake-trip-button h2, .photo-flight-button h2, .charter-button h2, .remote-high-country-tramp-button h2{
+    color: white;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Hind Vadodara', sans-serif;
+
+}
+.activity-line{
+    margin:auto;
+    width: 940px;
+    height: 220px;
+    display: flex;
+    justify-content:space-between;
+}
+footer{
+    width: 100%;
+    background-color: #2DA4B7;
+    padding-top: 55px;
+}
+.reviews{
+    margin:0 auto;
+    width: 940px;
+    height: 320px;
+    background-color: aliceblue;
+    color: #1E78D2;
+}
+.hero-image{
+    width:100%;
+    height:1000px;
+    background: url('hero.png') no-repeat center;
+}
+.nav li a{
+    text-decoration: none;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 12mm;
+    color: #2DA4B7;
+    transition: color 0.8s ease;
+}
+.nav li a:hover{
+    color: #1E78D2;
+}
+.activity-section{
+    height: 670px;
+    padding-bottom: 230px;
+    padding-top: 230px;
+}
+.activity-line{
+    position: relative;
+    margin:auto;
+    width: 940px;
+}
+.activity-section h3{
+    position: absolute;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.blue-line{
+    width:100%;
+    height: 1px;
+    background-color:#2DA4B7;
+}
+.blue-line-small, .blue-line-thick{
+    background-color:#2DA4B7;
+    height: 1px;
+    width:940px;
+    margin: auto;
+
+}
+.logo{
+    padding-top:30px;
+    padding-left:55px;
+}
+.logo:hover{
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+.nav li{
+    display: inline;
+    padding:8px 100px;
+}
+.nav{
+    float: right;
+    padding-top: 105px;
+
+}
+
+.activity-image p{
+position: absolute;
+}
+.activity-image{
+    position: relative;}
+footer li a{
+    text-decoration: none;
+    width:55px;
+    height: 55px;
+    color: whitesmoke;
+}
+.slogan{
+    width: 1100px;
+    height:110px;
+    padding-left: 300px;
+    padding-top: 150px;
+}
+.slogan h2{
+    color: #2DA4B7;
+    font-size: 36pt;
+    margin-bottom: 10px;
+}
+.slogan h4{
+    color: #2DA4B7;
+    font-size: 14pt;
+}
+footer li{
+    display: inline;
+    width: 300px;
+    height: 30px;
+    padding: 10px 39px;
+
+}
+footer ul{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 12px;
+
+}
+.blue-line-thick{
+    width:1903px;
+    height: 50px;
+    display: block;
+}
+.arrow{
+    margin:auto;
+    width: 41px;
+    display: block;
+}
+.deals{
+
+    color: white;
+    text-align: center;
+    font-family: 'Hind Vadodara', sans-serif;
+    background-color:#2DA4B7;
+    margin:auto;
+    width: 250px;
+    text-decoration: none;
+    display: block;
+}
+.deals img{
+    text-decoration: none;
+    width: 50px;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.activity-button{
+    width: 470px;
+    height: 220px;
+}
+
+/*************************
+* CONTACT FORM CSS START *
+**************************
+*/
+.hero-image-secondary{
+    height:315px;
+    width:100%;
+}
+.contact-section{
+    width: 1020px;
+    height: 850px;
+    background-color: #ffffff;
+    margin:auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.contact-article{
+
+    width:400px;
+    height: 600px;
+    background-color:#2DA4B7;
+    padding:16px 12px;
+    border-radius: 10px;
+
+}
+.contact-article h2{
+    text-align: center;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 35px;
+}
+.contact-article p{
+    font-family: 'Hind Vadodara', sans-serif;
+}
+#contact-us-form input[type=submit]{
+    margin-top: 0px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px 0px;
+    background-color: white;
+
+
+
+}
+#contact-us-form input[type=text]{
+    width:99%;
+    height: 32px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+#contact-us-form input[type=text][name=comment]{
+    height: 90px;
+}
+h3{
+    font-family: 'Hind Vadodara', sans-serif;
+}
+#contact-us-form h4{
+    margin: 0px;
+}
+#contact-us-form{
+    padding: 5px;
+    border-radius: 5px;
+
+}
+#contact-us-form br{
+    margin:0;
+    padding:0;
+}
+/************************
+*    Activity Styling
+*         Start
+/***********************/
+.obvious-key-phrase{
+    text-align: center;
+    color: #2DA4B7;
+    font-size: 29pt;
+}
+.template-section{
+    height: 670px;
+    width: 760px;
+    margin:0 auto;
+}
+.activity-image-gallery{
+    display: flex;
+    justify-content: space-around;
+    margin:auto;
+}
+.template-article{
+    height:420px;
+    }
+.template-article h3{
+    text-align: center;
+    margin-top: 0px;
+}
+.template-article p, .booking-article, .booking-wrapper{
+    margin-top: 12px;
+    margin: 0px 25px;
+}
+.template-article h2, .booking-article, .booking-wrapper{
+    text-align: center;
+    padding-top: 30px;
+}
+.template-button{
+    height: 90px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.youtube-activity{
+    margin: auto;
+    width: 940px;
+    padding-bottom: 0px;
+    height: 610px;
+}
+.youtube-activity h3{
+    text-align: center;
+}
+.template-button a{
+    color: white;
+    padding:12px 30px;
+    background-color: #1E78D2;
+    border-radius: 5px;
+}
+#booking span{
+    color: red;
+    font-weight: bold;
+}
+.image-gallery__main{
+    margin:auto;
+    width: 960px;
+}
+
+/**********************/
+/* BOOKING FORM START */
+/**********************/
+#booking{  }
+.booking-article, .booking-wrapper{
+    height:875px;
+    background-color: #2DA4B7;
+    border-radius: 5px;
+}
+.booking-radio {
+    float: left;
+    text-align: left;
+    margin:auto;
+    width: 240px;
+    margin-left: 27px;
+    margin-top: 15px;
+}
+.booking-radio{
+    width: 175px;
+}
+.booking-article, .booking-wrapper{
+    margin:auto;
+    width: 250px;
+}
+.booking-radio input[type=radio]{
+    padding-top: 12px;
+}
+#booking h4{
+    margin-bottom: 0px;
+    padding-top: 15px;
+}
+.booking-radio div{
+    margin-top: 10px;
+}
+.submit-button [type=submit]{
+    width: 90px;
+    height: 38px;
+margin-top: 15px;
+}
+.booking-holster{
+    width: 750px;
+    height: 1250px;
+    display: flex;
+    margin: auto;
+}
+.booking-error-span{
+    height: 25px;
+}
+.booking-section{}
+
+/* JS CONTENT FOR IMAGE MODAL*/
+
+.myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* JS CONTENT FOR IMAGE MODAL END*/
+
+/* JS CONTENT FOR FORM VALIDATION*/
+.closed{
+    display: none;
+}
+/* JS CONTENT FOR FORM VALIDATION*/

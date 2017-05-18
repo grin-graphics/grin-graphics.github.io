@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>WiJ  - About Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.css">
+        <link rel="stylesheet" href="../public-css/main-style.css">
+        <link rel="stylesheet" href="../public-css/planetarium.css">
+        <link rel="stylesheet" href="../public-css/radios-to-slider.min.css">
+        <link rel="stylesheet" href="../public-css/timedropper.min.css">
+        <link rel="stylesheet" href="../public-css/switchery.min.css">
+        <link rel="stylesheet" href="../public-css/sweetalert.css">
+        <link rel="shortcut icon" href="favicon.ico" >
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW9X9z48TBNYnkb2BQNaMtYJ2q0L-o-AY&callback=initMap">
+        </script>
+    </head>
+    <body>
+        <div id='fullpage'>
+            <div class="section bg-eight">
+                <div class='cont'>
+                    <h1 class="header centered">About WiJ
+                    </h1>
+                    <div class='wrap'>
+                        <div class='full-content'>
+                            <p class='text-content'>WiJ was created to give a basic understanding of jQuery and jQuery plugins to designers and developers alike. The site is intended to give a short summary of the basics of jQuery in order to help push students in the right direction when learning jQuery.
+                                WiJ was a 2 week side project made by one person as an assignment to learn about basic jQuery.
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='section bg-seven'>
+                <div class='cont'>
+                    <h1 class="header">About the Creator
+                    </h1>
+                    <div class='wrap'>
+                        <div class='left-content'>
+                            <p class='text-content'>Ant is a freelance front end developer and Graphic designer studying web design and development at ACG school of design. Here is my <a href="https://github.com/Grindustries" target="_blank">Github</a> I've been slightly inactive as of recent but will be posting again.
+                            </p>                            
+                        </div>
+                        <div class="right-content">
+                            <div id='map'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--This is how i am getting jQuery to this website, through this CDN the website is getting all the info it needs to use jQuery.-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!--Main JavaScript file controlling all plugins. -->
+        <script src="../public-js/main-plugins.js"></script>
+        <script src="../public-js/jquery.fittext.js"></script>
+        <script src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
+        <script src="../public-js/jquery.planetarium.min.js"></script>
+        <script src="../public-js/sweetalert.min.js"></script>
+        <script src="../public-js/randomColor.js"></script>
+    </body>
+</html>

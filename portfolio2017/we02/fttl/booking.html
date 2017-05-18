@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>FTTL - BOOKING</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="hero-image-secondary">
+        <header>
+            <a href="index.html"><img class="logo" src="logo.png" alt="Fly to the limit Logo"></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="activity.html">Activities</a></li>
+                    <li><a href="booking.html">Bookings</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="booking-section">
+        <div class="booking-holster">
+        <div class="booking-article">
+            <h2>Pricing</h2><br>
+            <p>Example: $100</p><p>Example: $100</p><p>Example: $100</p>
+        </div>
+        <div class="booking-article">
+            <h2>Bookings</h2>
+            <form id="booking" action="index.html" method="get" novalidate>
+                <h4>Full Name</h4>
+                <input id="name" type="text" name="name" required>
+                <br><div class="booking-error-span"><span id="name-error"></span></div>
+                <h4>Email Address</h4>
+                <input id="email" type="email" name="email" required>
+                <br><div class="booking-error-span"><span id="email-error"></span></div>
+                <h4>Number of People</h4>
+                <input id="no-of-people" type="text" name="no-of-people" required>
+                <br><div class="booking-error-span"><span id="no-of-people-error"></span></div>
+                <h4>Number of Hours</h4>
+                <input id="no-of-hours" type="text" name="no-of-hours" required>
+                <br><div class="booking-error-span"><span id="no-of-hours-error"></span></div>
+                <h4>Date</h4>
+                <input id="date" type="text" name="date" required>
+                <br><div class="booking-error-span"><span id="date-error"></span></div>
+
+                <div class="booking-radio">
+                    <div><input type="radio" name="activity-option" checked="checked">1 Hour Scenic<br></div>
+                    <div><input type="radio" name="activity-option">2 Hour Scenic<br></div>
+                    <div><input type="radio" name="activity-option">Mountain Viewing<br></div>
+                    <div><input type="radio" name="activity-option">Lake Trip<br></div>
+                    <div><input type="radio" name="activity-option">Photographic Flights<br></div>
+                    <div><input type="radio" name="activity-option">Charters<br></div>
+                    <div><input type="radio" name="activity-option">Remote Tramps<br></div>
+        </div>
+                <div class="submit-button"><input type="submit" name="contact-submit"></div>
+            </form>
+
+
+
+
+    </div>
+        </div>
+
+
+
+        <footer>
+        <ul>
+            <li><a href="activity.html">Activities</a></li>
+            <li><a href="booking.html">Bookings</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Copyright © 2016 Fly to the Limit</a></li>
+        </ul>
+    </footer>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

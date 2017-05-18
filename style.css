@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*custom styling*/
+body{
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #121e31;
+    color: white;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+#100{
+    width: 100%;
+    height: 100%;
+}
+#container{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid;
+    border-color: #253e5a;
+    background-color: #121e31;
+}
+.line{
+    padding: 3px;
+    width: 100%;
+    border-left: 1px solid;
+    border-color: #505050;
+}
+.orange{
+    color: #f7a21a;
+}
+.pink{
+    color: #c0065c;
+}
+.green{
+    color: #007c00;
+}
+.gray{
+    color:#505050;
+}
+.cyan{
+    color:#b2ccff;
+}
+.yellow{
+    color:#eddd3d;
+}
+.blue{
+    color:#3a696e;
+}
+.red{
+    color:#990f29;
+}
+.h6{
+    width: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition:color 0.5s ease;
+}
+a:hover{
+
+    color: #b2ccff;
+}
+#git-link{
+position: fixed;
+top: 0;
+right: 0;
+width: 90%;
+text-align: right;
+padding: 10px 20px;
+}
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    span{
+        font-size: 7pt;
+    }
+}
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    span{
+        font-size: 3pt;
+    }
+}

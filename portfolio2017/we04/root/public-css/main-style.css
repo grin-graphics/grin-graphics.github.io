@@ -1,0 +1,326 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* Start styling from here down */
+/* Above is style reset */
+
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(185deg, #ff0e0e, #ff850e, #ffcf0e, #0eff22, #0e88ff, #5e0eff, #fd0eff);
+    background-size: 1400% 1400%;
+    z-index:1001;
+    -webkit-animation: AnimationName 8s ease infinite;
+    justify-content: center;
+}
+
+#overlay-content{ 
+    position: absolute;
+    display: none;
+    width: 360px;
+    height: 90px;
+    padding: 16px;
+    z-index:1002;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1, 2.2);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+@font-face {
+    font-family: 'gothambold1';
+    src: url('./gothambold1.eot');
+    src: local('gothambold1'), url('./gothambold1.woff') format('woff'), url('./gothambold1.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'josefsans';
+    src: url('./josefsans.ttf');
+    src: local('josefsans') url('./josefsans.ttf') format('truetype');
+}
+a{
+    color: white;
+}
+.header{
+    font-size: 50pt;
+    font-family: gothambold1;
+    color: white;
+}
+.cont{
+    margin: 0 auto;
+    width: 70%;
+    height: 80%;
+
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.full-content{
+    width: 100%;
+    margin: 30px 15px;
+}
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+.left-content{
+    width: 500px;
+    margin:30px 15px;
+    height: 390px;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    bottom: 0; right: 0;  left: 0;
+}
+.right-content{
+    width: 500px;
+    margin:30px 15px;
+    height: 390px;
+
+}
+.top-content{
+    width: 100%;
+    margin: 30px 15px;
+}
+#alarm, #sweetalert, .button{
+    padding: 10px;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #1977CC;
+    margin: 15px;
+    font-family: josefsans;
+    background-color: white;
+}
+.about{
+    height: 20px;
+}
+.bottom-content{
+    width: 100%;
+    height: 100px;
+    margin: 30px 15px;
+    display: flex;
+    justify-content: center;
+
+}
+.space{
+    background-color: black;
+}
+.column{
+    flex-direction: column;
+    justify-content: center;
+}
+.bg-one{
+    background: linear-gradient(0deg, #ff5959, #ee5050, #ce6666);
+    background-size: 600% 600%;
+    animation: AnimationName 30s ease infinite;
+}
+@keyframes AnimationName { 
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+
+}
+.bg-two{
+    background: linear-gradient(0deg, #ff9559, #ee8250, #ce9066);
+    background-size: 600% 600%;
+    animation: AnimationName 30s ease infinite;
+}
+.bg-three{
+    background: linear-gradient(0deg, #ffde59, #eedc50);
+    background-size: 400% 400%;
+    animation: AnimationName 30s ease infinite;
+}
+.bg-four{
+    background: linear-gradient(0deg, #abff59, #97ee50, #7edf2f);
+    background-size: 600% 600%;
+    animation: AnimationName 30s ease infinite;
+}
+
+.bg-five{
+    background: linear-gradient(0deg, #59ffa1, #50eea9, #2fdfaa);
+    background-size: 600% 600%;
+    animation: AnimationName 30s ease infinite;
+
+}
+.bg-six{
+    background: linear-gradient(0deg, #599fff, #50a7ee, #2f78df);
+    background-size: 600% 600%;
+    animation: AnimationName 30s ease infinite;
+
+}
+.bg-seven{
+    background: linear-gradient(0deg, #9f59ff, #7d50ee, #882fdf);
+    background-size: 600% 600%;
+    animation: AnimationName 30s ease infinite;
+}
+.bg-eight{
+    background: linear-gradient(0deg, #ff59b0, #ee50c5, #df2fa2);
+    background-size: 600% 600%;
+    animation: AnimationName 30s ease infinite;
+
+}
+.text-content{
+    font-family: josefsans;
+    font-size: 22pt;
+    color: white;
+    line-height: 35px;
+}
+.arrow{
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+.snip{
+    background-color: #333;
+    border-radius: 0.3em;
+    color: #fff;
+    width: 500px;
+    padding: 10px;
+}
+code{
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    padding: 25px;
+}
+.threesnip{
+    margin-top: 280px;
+}
+.centered{
+    text-align: center;
+}
+.centered-div{
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.circle-color{
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+.row{
+    height: 52px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+.pc-hide{
+    display: none;
+}
+@media only screen /* Tablet Media Query */
+and (min-device-width: 600px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .text-content{
+        font-size: 2.091145854245em;
+    }
+    .ph-hide{
+        display: block;
+    }
+    .header{
+        font-size: 4.0986458743202em;
+    }
+    .mq-full{
+        width: 100%;
+    }
+    .mq-hide{
+        display: none;
+    }
+    .wrap{
+        display: block;
+        height: 40.625em;
+    }
+    .mq-block{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .threesnip{
+        margin: 0 auto;
+    }
+    .mq-sweet{
+        height: 12.500em;
+    }
+    .row{
+        display: flex;
+        justify-content: space-around;
+    }
+    .mq-centered{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+}
+@media only screen /* Mobile Phone Media Query */
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .header{
+        font-size: 2.4257291909242em;
+    }
+    .text-content{
+        font-size: 1.1710416783772em;
+        line-height: 1.375em;
+    }
+    .mq-hide, .snip, .ph-hide{
+        display: none;
+    }
+    .circle-color{
+        width: 1.875em;
+        height: 1.875em;
+        -moz-border-radius: 3.125em;
+        -webkit-border-radius: 3.125em;
+        border-radius: 3.125em;
+        display: block;
+    }
+    .row{
+        display: inline;
+
+    }
+    .mq-block{
+        display: block;
+    }
+    .mq-100{
+        width: 100%;
+    }
+    .set-green{
+        display: none;
+    }
+    .set-orange{
+        display: none;
+    }
+    .set-purple{
+        display: none;
+    }
+    .set-random{
+        display: block;
+    }
+    .mq-flex{
+        display: flex;
+        justify-content: space-around;
+    }
+    .pc-hide{
+        display:inline;
+    }
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WiJ - Homepage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.css">
+        <link rel="stylesheet" href="../public-css/main-style.css">
+        <link rel="stylesheet" href="../public-css/planetarium.css">
+        <link rel="stylesheet" href="../public-css/sweetalert.css">
+        <link rel="stylesheet" href="../public-css/jquery.secretnav.css">
+        <link rel="shortcut icon" href="favicon.ico" >
+    </head>
+    <body>
+        <div id="overlay">
+            <div id="overlay-content">
+            </div>
+        </div>
+        <nav>
+            <ul class="text-content">
+                <li><a href="about.html">Woah A Secret!</a></li>
+                <li><a href="about.html">I'm not the only secret though</a></li>
+                <li><a href="about.html">Good luck finding them all</a></li>
+            </ul>
+        </nav>
+        <div id="fullpage">
+
+            <div class="section bg-one"> <!-- First Slide/ Intro Slide -->
+                <div class="cont">
+                    <h1 class="header">Welcome to WiJ.com
+                    </h1>
+                    <div class="wrap">
+                        <div class="left-content mq-full"><p class="text-content">
+                                In partnership with Yoobee ACG School of Design this website was created to teach a basic understanding of jQuery and jQuery plugins by showing examples and providing external links so you can continue your learning experience.
+                                <br> This site is best viewed on desktop or tablet.
+                                <br>
+                            <div class="scroll-fp text-content mq-hide">Scroll to continue through the site.
+                            </div>
+                        </div>
+                        <div class="right-content mq-hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section bg-two"> <!-- Second Slide/ What is jQuery -->
+                <div class="cont">
+                    <h1 class="header">What exactly is jQuery?
+                    </h1>
+                    <div class="wrap">
+                        <div class="left-content mq-full mq-100"><p class="text-content">
+                                jQuery is a JavaScript Library used to simplify JavaScript to HTML interactions. jQuery is designed to simplify a ton of tasks by writing less code. jQuery make things like animating, event handling, and DOM manipulation easier than JavaScript. For more info on what jQuery can do visit <a href="https://jquery.com/" target="_blank">Here</a>
+                            </p>
+                        </div>
+                        <div class="right-content mq-hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section bg-three"> <!-- Third Slide/ How to use jQuery -->
+                <div class="cont">
+                    <h1 class="header">How do I install jQuery?
+                    </h1>
+                    <div class="wrap">
+                        <div class="left-content">
+                            <p class="text-content">
+                                The first thing we need is access to jQuery, there are two ways to do this. The first is to download it from the site and plug it in the way you would a Javascript file. The second method is to use a <a href="https://en.wikipedia.org/wiki/Content_delivery_network" target='_blank'>CDN</a> which gets the information from a server instead of having to have all the info on your site. Some of the jQuery being used on the site is being accessed by 
+                                <br class="ph-hide">a CDN. 
+                            </p>
+                        </div>
+                        <div class="right-content ph-hide">
+                            <div class="snip threesnip">
+                                <pre><code>
+This is an example of a jQuery CDN<br class="mq-hide">
+&lt;script 
+    src="https://code.jquery.com/jquery-3.1.1.slim.min.js"&gt;
+&lt;/script&gt;
+
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section bg-four"> <!-- Fourth Slide/ jQuery uses -->
+                <div class="cont">
+                    <h1 class="header">How do I use jQuery?
+                    </h1>
+                    <div class="wrap">
+                        <div class="left-content">
+                            <p class="text-content">
+                                jQuery has a long list of functions, methods and attributes all of which I cannot explain on this small site however I can explain the most commonly used piece of jQuery, the inbuilt select tool. It's pretty simple in comparison to how you select some HTML in JavaScript, what you do to select something is "$('This is what I am selecting')". After the selector you place in a 
+                                <a href="http://api.jquery.com/?s=method" target="_blank">method
+                                </a>
+                            </p>
+                        </div>
+                        <div class="right-content ph-hide">
+                            <div class="snip">
+                                <pre>
+                                    <code>
+I'm selecting the paragraph and setting the text 
+color to white
+
+$(".text-content").css("color","white");
+
+In this example i'm appending (inserting) some text
+into this example.
+
+$(".snip").append(&lt;p&gt;This is being appended.&lt;/p&gt;);
+</code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section bg-five"> <!-- Fifth Slide/ jQUery Plugin Intro -->
+                <div class="cont">
+                    <h1 class="header">jQuery Plugins
+                    </h1>
+                    <div class="wrap">
+                        <div class="left-content">
+                            <p class="text-content">
+                                A jQuery plugin is JavaScript code written which uses jQuery methods that can be used in conjunction with jQuery to do all kinds of things. For example this website is built on a plugin which allows people to easily create fullpage slideshow websites or applications. 
+                            </p>
+                        </div>
+                        <div class="right-content ph-hide">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section bg-six"> 
+                <div class="slide"> <!-- Sixth Slide/ jQuery plugin example 1 -->
+                    <div class="cont">
+                        <h1 class="header centered jumble">jQuery plugin examples
+                        </h1>
+                        <div class="wrap">
+                            <div class="left-content mq-100 mq-sweet">
+                                <p class="text-content">jQuery plugins come in all shapes and sizes, each plugin is unique and useful in some way or another. This plugin generates random colors except with certain properties like a specific Hue or a certain brightness.
+                                </p>
+                                <div style="width:100%; hanging-punctuation: "><div class='row pc-hide'>
+                                        <div class="circle-color color-random-1">
+                                        </div>
+                                        <div class="circle-color color-random-2">
+                                        </div>                                    
+                                        <div class="circle-color color-random-3">
+                                        </div>
+                                    </div>
+                                    <div class='row pc-hide'>
+                                        <div class="circle-color color-random-1">
+                                        </div>
+                                        <div class="circle-color color-random-2">
+                                        </div>                                    
+                                        <div class="circle-color color-random-3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <button class="button set-green">Set Hue to Green
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="button set-random ph-hide">Randomize Colors
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right-content ph-hide mq-hide">
+                                <div class='row mq-flex'>
+                                    <div class="circle-color color-random-1">
+                                    </div>
+                                    <div class="circle-color color-random-2">
+                                    </div>
+                                    <div class="circle-color color-random-3">
+                                    </div>
+                                    <div class="circle-color color-random-4">
+                                    </div>
+                                    <div class="circle-color color-random-5">
+                                    </div>
+                                    <div class="circle-color color-random-6">
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class="circle-color color-random-7">
+                                    </div>
+                                    <div class="circle-color color-random-8">
+                                    </div>
+                                    <div class="circle-color color-random-9">
+                                    </div>
+                                    <div class="circle-color color-random-10">
+                                    </div>
+                                    <div class="circle-color color-random-11">
+                                    </div>
+                                    <div class="circle-color color-random-12">
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class="circle-color color-random-13">
+                                    </div>
+                                    <div class="circle-color color-random-14">
+                                    </div>
+                                    <div class="circle-color color-random-15">
+                                    </div>
+                                    <div class="circle-color color-random-16">
+                                    </div>
+                                    <div class="circle-color color-random-17">
+                                    </div>
+                                    <div class="circle-color color-random-18">
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class="circle-color color-random-19">
+                                    </div>
+                                    <div class="circle-color color-random-20">
+                                    </div>
+                                    <div class="circle-color color-random-21">
+                                    </div>
+                                    <div class="circle-color color-random-22">
+                                    </div>
+                                    <div class="circle-color color-random-23">
+                                    </div>
+                                    <div class="circle-color color-random-24">
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class="circle-color color-random-25">
+                                    </div>
+                                    <div class="circle-color color-random-26">
+                                    </div>
+                                    <div class="circle-color color-random-27">
+                                    </div>
+                                    <div class="circle-color color-random-28">
+                                    </div>
+                                    <div class="circle-color color-random-29">
+                                    </div>
+                                    <div class="circle-color color-random-30">
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class="circle-color color-random-31 open-menu">
+                                    </div>
+                                    <div class="circle-color color-random-32">
+                                    </div>
+                                    <div class="circle-color color-random-33">
+                                    </div>
+                                    <div class="circle-color color-random-34">
+                                    </div>
+                                    <div class="circle-color color-random-35">
+                                    </div>
+                                    <div class="circle-color color-random-36">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide"> <!-- Seventh Slide/ jQuery plugin example 2 -->
+                    <div class="cont">
+                        <h1 class="header">Sweet Alerts!
+                        </h1>
+                        <div class="wrap">
+                            <div class="left-content mq-sweet">
+                                <p class="text-content">This example shows off a useful little plugin called 
+                                    <a href="http://t4t5.github.io/sweetalert/" target="_blank">Sweet Alert</a>, it makes basic alerts look sweet.
+                                </p>
+                                <button id="sweetalert" class='centered-div' type="button">Press Me I'm an example, I promise
+                                </button>
+
+
+                            </div>
+                            <div class="right-content ph-hide">
+                                <div class='snip'>
+                                    <pre>
+                                    <code>
+This is the setup to the basic sweet alert example.
+
+$('#sweetalert').click(function () {
+        swal({
+            title: "Sweet Alert Example",
+            text: "This is an example of Sweet Alert,
+            a plugin which creates sweet looking alerts!",
+            type: "success",
+            showCancelButton: true,
+            confirmButtonText: "Sweet!",
+            cancelButtonText: "Rad!",
+            closeOnConfirm: false,
+            closeOnCancel: false
+        },
+                function (isConfirm) {
+                    if (isConfirm) {
+                        swal("Sweet!", "You chose Sweet,
+                        that's rad!", "success");
+                    } else {
+                        swal("Rad!", "You chose Rad,
+                        Sweet!", "success");
+                    }
+                });
+    });
+</code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide space"> <!-- Eighth Slide/ jQuery plugin example 3 -->
+                    <div class="cont">
+                        <h1 class="header ">The possibilities of jQuery and jQuery plugins are limitless</h1>
+                        <div class="wrap column">
+                            <div class="top-content">
+                                <p class="text-content">jQuery and jQuery plugins have so many options, this plugin makes planets on your page. Whilst making this site I found so many different types of plugins.
+                                </p>
+                            </div>
+                            <div class="bottom-content">
+                                <div class="earth planet">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            <div class="section bg-seven">  Ninth Slide/ Thank you/ Conclusion paragraph 
+                            <div class="cont">
+                                <h1 class="header centered">Thanks for viewing</h1>
+                                <div class="wrap">
+                                    <div class="left-content">
+                                        <p class="text-content"></p>
+                                    </div>
+                                    <div class="right-content"></div>
+                                </div>
+                            </div>
+                        </div>-->
+            <div class="section bg-seven"> <!-- Tenth Slide/ Plugin External links -->
+                <div class="cont">
+                    <h1 class="header centered">Plugins
+                    </h1>
+                    <div class="wrap">
+                        <div class="top-content">
+                            <p class="text-content">
+                                <a href="http://alvarotrigo.com/fullPage/#firstPage" target="_blank">FullPage.js</a>: This plugin creates the layout of the page.
+                                <br>
+                                <a href="http://fittextjs.com/" target="_blank">FitText</a>: This plugin makes the Headers fit to the frame no matter the size.
+                                <br>
+                                <a href="http://www.thepetedesign.com/demos/planetarium_demo.html" target="_blank">Planetarium</a>: This plugin creates the spinning earth.
+                                <br>
+                                <a href="http://t4t5.github.io/sweetalert/" target="_blank">Sweet Alert</a>: This plugin creates sweet alerts.
+                                <br>
+                                <a href="https://randomcolor.llllll.li/" target="_blank">Random Color</a>: This plugin creates random colors.
+                                <br>
+                                <a href="https://github.com/vonKristoff/jumble" target="_blank">Jumble</a>: This plugin allows you to make a element change color in a random sequence.
+                                <br>
+                                <a href="https://github.com/vonKristoff/jumble" target="_blank">Secret Nav</a>: This plugin creates a hidden nav that can only be shown when a certain element is clicked.
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--This is how i am getting jQuery to this website, through this CDN the website is getting all the info it needs to use jQuery.-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+        </script>
+        <!--Main JavaScript file controlling all plugins. -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
+        </script>
+        <script src="../public-js/main-plugins.js">
+        </script>
+        <script src="../public-js/jquery.fittext.js">
+        </script>
+        <script src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js">
+        </script>
+        <script src="../public-js/jquery.planetarium.min.js">
+        </script>
+        <script src="../public-js/sweetalert.min.js">
+        </script>
+        <script src="../public-js/randomColor.js">
+        </script>
+        <script src="../public-js/jumble.min.js">
+        </script>
+        <script src="../public-js/jquery.secretnav.min.js">
+        </script>
+    </body>
+</html>

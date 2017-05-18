@@ -1,0 +1,21 @@
+body{
+    name:Alexander;
+    ethnicity: european['kiwi'];
+    age: 20; 
+    height: 7142px; /* 190cm */
+}
+#skills{
+    leadership: leadership and team management skills for organizing teams;
+    fast-thinking: Quick on the spot thinking for problems;
+    perfectionist: leaves nothing unfinished and strives for success;
+    natural-teacher: tutors people in spare time; 
+}
+#qualifications{
+    graphic-design: diploma;
+    website-design-and-development: diploma;
+    NCEA: 2;
+}
+#contact-details{
+    mobile: +64 204 0564756;
+    email: atomov303@gmail.com;
+}
